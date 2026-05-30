@@ -1,0 +1,15 @@
+apiversion : v1
+kind : Pod
+metadata :
+  name : nginx 
+  namespace : roboshop
+  labels :
+    name : nginx 
+    project : roboshop
+
+spec : 
+  containers :
+    - name : nginx
+      image : nginx
+      ports :
+        - conatinerPort: 80
